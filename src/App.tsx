@@ -97,7 +97,7 @@ const App = () => {
         }
         style={{ color: 'black' }}
         className="input"
-        value={formState.name}
+        value={formState.name || ''}
         placeholder="Em đang ..."
       />
 
@@ -119,6 +119,7 @@ const App = () => {
             </button>
           </div>
         ))}
+
       <div className="image-container" style={{ textAlign: 'center' }}>
         <img src="/em.jpg" style={{ width: '400px' }} alt="" />
       </div>

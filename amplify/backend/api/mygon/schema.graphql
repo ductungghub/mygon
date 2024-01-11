@@ -6,5 +6,5 @@ input AMPLIFY {
 type Todo @model {
   id: ID!
   sort: Int
-  name: String?
+  name: String
 }

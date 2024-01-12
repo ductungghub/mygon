@@ -14,6 +14,12 @@
     "categories": {
       "api": {
         "mygon": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d27htvqc7on87r",
+          "type": "cicd"
+        }
       }
     }
   }

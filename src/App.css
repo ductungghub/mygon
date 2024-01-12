@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8,20 +8,24 @@
 }
 
 .todo {
+  margin-top: 0.5rem;
   border: 1px solid #9a8b8b;
+  margin-bottom: 0.5rem;
 }
 
 .input {
   border: none;
   background-color: #ddd;
   margin-bottom: 10px;
-  padding: 8px;
+  padding: 12px 8px;
   font-size: 18px;
 }
 
 .todoName {
   font-size: 20px;
   font-weight: bold;
+  word-wrap: break-word; /* Break long words onto the next line */
+  white-space: pre-line; /* Preserve newline characters in the text */
 }
 
 .button {
@@ -30,4 +34,27 @@
   outline: none;
   font-size: 18px;
   padding: 12px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+  .todoName {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
 }

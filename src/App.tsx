@@ -111,12 +111,18 @@ const App = () => {
           <div key={todo.id ? todo.id : index} className="todo">
             <span>Tin nhắn thứ {todo.sort} của em: </span>
             <span className="todoName">{todo.name}</span>
-            <button
-              style={{ marginLeft: '2rem', padding: '0.5rem' }}
-              onClick={() => deleteTodoItem(todo.id)}
-            >
-              Em muốn xóa tin nhắn này
-            </button>
+            <div>
+              <button
+                style={{
+                  marginRight: '1rem',
+                  padding: '0.5rem',
+                  marginTop: '0.5rem',
+                }}
+                onClick={() => deleteTodoItem(todo.id)}
+              >
+                Em muốn xóa tin nhắn này
+              </button>
+            </div>
           </div>
         ))}
 
